@@ -16,12 +16,15 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func callXib(_ sender: UIButton) {
-        let xib = UIViewController.init(nibName: "View", bundle: nil)
-        self.present(xib, animated: true, completion: nil)
+    @IBAction func callXib(_ sender: Any) {
+//        let xib = UIViewController.init(nibName: "View", bundle: nil)
+//        self.present(xib, animated: true, completion: nil)
 //
 //        let xib = (Bundle.main.loadNibNamed("View", owner: self, options: nil)?.first as? XibUIView)!
 //        self.view.addSubview(xib)
+    
+        AlertView.instance.showAlert(title: "Sucesso", message: "Apareceu essa merda")
+    
     }
     
 
